@@ -29,8 +29,8 @@
 \setkomavar{specialmail}{Bei Umzug mit neuer Anschrift zurück!} 
 %\setkomavar{priority}{manual} % z. B.: false, off, no, A (priority), B (economy), default: manual
 \makeatletter\renewcommand{\specialmail@format}{}\makeatother % specialmail nicht unterstreichen
-\setkomafont{specialmail}{\usekomafont{backaddress}\bfseries}
-\setplength{specialmailindent}{.5em}
+\setkomafont{specialmail}{\usekomafont{backaddress}\rule{0pt}{\ht\strutbox}\bfseries}
+\setplength{specialmailindent}{0pt}
 \setplength{specialmailrightindent}{\fill}
 
 %Beispiel für eigene komavar
